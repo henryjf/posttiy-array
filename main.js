@@ -19,21 +19,30 @@ var instructors = [
 // 1. Find largest number
 // -------------------------
 
-var largest = numbers[0];
+var largest = [];
+
 for ( i = 0; i <= largest; i++){
   if( largest < numbers[i]){
-   largest = numbers[i]
+   largest = numbers[i];
   }
 };
 console.log(largest);
 
 
-
-
-
 // ---------------------------
 // 2. Find longest string
 // ---------------------------
+// var strings = ['this','is','a','collection','of','words'];
+
+var word = [];
+
+for ( var i = 0; i < strings.length; i++ ){
+  if ( word < strings[i].length ) {
+    word = strings[i].length;
+    var longestWord = strings[i];
+  }
+};
+console.log(longestWord);
 
 
 
@@ -42,8 +51,14 @@ console.log(largest);
 // ---------------------------
 // 3. Find even numbers
 // ---------------------------
+var num = [];
+for ( var i = 0; i < numbers.length ; i++ ){
+  if (numbers[i] % 2 === 0 ){
+    num.push(numbers[i]);
+  }
 
-
+}
+console.log(num);
 
 // ---------------------------
 // 4. Find odd numbers
