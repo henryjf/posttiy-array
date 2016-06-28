@@ -19,17 +19,22 @@ var instructors = [
 // 1. Find largest number
 // -------------------------
 
- var lgNum = 0;
- for( var i = 0; i <= lgNum; i++ ) {
-   if (numbers[i]> lgNum) {
-     var lgNum = numbers[i];
-   }
- }
-console.log(lgNum);
+var largest = numbers[0];
+for ( i = 0; i <= largest; i++){
+  if( largest < numbers[i]){
+   largest = numbers[i]
+  }
+};
+console.log(largest);
+
+
+
+
 
 // ---------------------------
 // 2. Find longest string
 // ---------------------------
+
 
 
 
