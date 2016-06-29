@@ -51,23 +51,38 @@ console.log(longestWord);
 // ---------------------------
 // 3. Find even numbers
 // ---------------------------
-var num = [];
-for ( var i = 0; i < numbers.length ; i++ ){
-  if (numbers[i] % 2 === 0 ){
-    num.push(numbers[i]);
-  }
-
+var even = function(num){
+  return num % 2 === 0;
 }
-console.log(num);
+var evenNums = numbers.filter(even);
+console.log(evenNums);
+
+// var num = [];
+// for ( var i = 0; i < numbers.length ; i++ ){
+//   if (numbers[i] % 2 === 0 ){
+//     num.push(numbers[i]);
+//   }
+//
+// }
+// console.log(num);
+
 
 // ---------------------------
 // 4. Find odd numbers
 // ---------------------------
+var num = [];
+for ( var i = 0; i < numbers.length; i ++) {
+  if ( numbers[i] % 2 === 1) {
+    num.push(numbers[i]);
+  }
+}
+console.log(num);
 
 
 // ---------------------------
 // 5. Find words that contain `is`
 // ---------------------------
+
 
 
 
